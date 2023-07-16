@@ -6,6 +6,26 @@ petrolexpenses = print(int(input("enter your petrol expenses: ")))
 
 # added input
 
+# List of Expenditures
+expenditureList = []
+
+grossSalary = int(input("Enter Gross Salary: "))
+
+stop = False
+counter = 1
+while not stop:
+    print("Enter Expenditure ", counter)
+    expenditure = float(input())
+    expenditureList.append(expenditure)
+    counter = counter + 1
+    yes_no = input("Any Other Expenditure?(Yes/No)")
+    if yes_no == "yes":
+        stop = False
+    else:
+        stop = True
+
+print(expenditureList)
+
 
 grossSalary=int(input("Enter your gross salary"))
 houseRent=int(input("Enter your house rent"))
