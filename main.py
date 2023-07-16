@@ -1,3 +1,4 @@
+
 grossSalary=int(input("Enter your gross salary"))
 houseRent=int(input("Enter your house rent"))
 grosseries=int(input("Enter groceries"))
@@ -13,6 +14,7 @@ print(salary_savings())
 def emi_percent():
     return(grossSalary/EMI)
 print(emi_percent())
+
 
 
 
