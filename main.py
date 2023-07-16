@@ -43,6 +43,27 @@ def emi_percent():
     return(grossSalary/EMI*100)
 print(emi_percent())
 
+g=grossSalary
+def Tax(g):
+    "g is gross salary per month"
+    pft=200 ##professional tax
+    epf=g*0.12 ##provident fund
+    ns=g-pft-epf ##net salary
+    
+    ##ih is in-hand salary
+    if(ns*12<=250000 and ns>0) :
+        ih=ns
+    elif(ns*12>250000 and ns<500000) :
+        ih=0.95*ns
+    elif(ns*12>=500000 and ns<=1000000) :
+        ih=0.8*ns
+    elif(ns*12>=1000000) :
+        ih=0.7*ns
+
+    return ih
+    
+print(Tax(b))
+
 
 
 
